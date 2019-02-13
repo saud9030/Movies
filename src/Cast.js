@@ -4,10 +4,14 @@ class Cast extends Component {
     render() {
       const castMember = this.props.cast.map((member) => 
       <div>
-        {this.props.cast.name}
+        {member.name}
+        {}
       </div>)
       return (
-
+        <div>
+          {castMember}
+        </div>
+        
       );
     }
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Review from './review'
 import Cast from './Cast'
 class Movie extends Component {
+    srate = {liked : false};
     render() {
       return (
         <div>
@@ -13,7 +14,9 @@ class Movie extends Component {
               {this.props.movie.description}
             </p>
             <Review/>
+            
         </div>
+        
       );
     }
 }
